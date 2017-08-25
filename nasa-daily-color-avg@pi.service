@@ -1,0 +1,6 @@
+[Unit]
+Description=Set my smartbulb to the average color of NASA's Image of the Day
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c'python3 /home/homeassistant/.homeassistant/nasa-daily-color-avg.py'

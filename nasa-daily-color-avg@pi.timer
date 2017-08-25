@@ -1,0 +1,9 @@
+[Unit]
+Description=Calls the nasa-daily-color-avg service
+
+[Timer]
+OnCalendar=*-*-* 07:30:00
+Persistent=yes
+
+[Install]
+WantedBy=timers.target
